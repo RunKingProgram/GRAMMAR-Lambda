@@ -1,4 +1,4 @@
-# OptimGRAMMAR
+# GRL
 
 ## 1.Getting started
 
