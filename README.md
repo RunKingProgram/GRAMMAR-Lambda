@@ -43,10 +43,13 @@ We provide three functions in **GRL**: Data function for basic data management i
 ```
 Data (filename, nsmar, msampling)
 ```
-####Arguments<br>
-####filename<br>    An object class of character: the filename before the suffix of plink files. The three plink file must have a same filename, for example, “filename.bed”, “filename.bim” and “filename.bam”.<br>
-####nsmar<br>     An optional numeric for the number of sampling markers. If this is unset, the “nsmar” default is 5,000.<br>
-####msampling<br>  logicals. If FLASE, entire markers will be used to calculate GRM. If this is unset or for large scale dataset, the “msampling” default is TURE.<br>
+#### Arguments
+#### filename
+An object class of character: the filename before the suffix of plink files. The three plink file must have a same filename, for example, “filename.bed”, “filename.bim” and “filename.bam”.<br>
+#### nsmar
+An optional numeric for the number of sampling markers. If this is unset, the “nsmar” default is 5,000.<br>
+#### msampling
+logicals. If FLASE, entire markers will be used to calculate GRM. If this is unset or for large scale dataset, the “msampling” default is TURE.
 
 ### 3.2 Grammar function
 #### Usage
@@ -54,10 +57,14 @@ Data (filename, nsmar, msampling)
 Grammar (Data, Estimateh2, AssoTst)
 ```
 
-####Arguments<br>
-####Data<br>       An object class of list from the 1st step.<br>
-####Estimateh2<br>  logicals. If TURE, heritability will be estimated and the estimate would be used for estimating breeding value. If this is unset or for large scale dataset, a moderate heritability is set by default at 0.5.<br>
-####AssoTst<br>    You can choose correlation analysis software “GCTA” or “PLINK2.0” as prefer, “PLINK2.0” by default.<br>
+#### Arguments
+
+#### Data
+An object class of list from the 1st step.
+#### Estimateh2
+logicals. If TURE, heritability will be estimated and the estimate would be used for estimating breeding value. If this is unset or for large scale dataset, a moderate heritability is set by default at 0.5.
+#### AssoTst
+You can choose correlation analysis software “GCTA” or “PLINK2.0” as prefer, “PLINK2.0” by default.
 
 
 ### 3.3 GRL
@@ -65,11 +72,16 @@ Grammar (Data, Estimateh2, AssoTst)
 ```
 Grl(Grammar, Test, QQ,Manh)
 ```
-####Arguments<br>
-####Grammar<br>    An object class of list from the 2st step.<br>
-####Test<br>        An optional for association test, a test at once or joint analysis. You can choose “Separate” for a test at once and “Joint” for further joint analysis based on the result of “Separate”.<br>
-####QQ<br>       logicals. If TURE, Q-Q plot would be drawn.<br>
-####Manh<br>       logicals. If TURE, Q-Q plot would be drawn.<br>
+#### Arguments
+
+#### Grammar
+An object class of list from the 2st step.
+#### Test
+An optional for association test, a test at once or joint analysis. You can choose “Separate” for a test at once and “Joint” for further joint analysis based on the result of “Separate”.
+#### QQ
+logicals. If TURE, Q-Q plot would be drawn.
+#### Manh
+logicals. If TURE, Q-Q plot would be drawn.
 
 ## 4. Output
 
