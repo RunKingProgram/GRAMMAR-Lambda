@@ -85,7 +85,7 @@ logicals. If TURE, Manhattan plot would be drawn. True by default.
 
 ## 4. Output
 
-The **Grammar** function generates a plink association text output file called “Grammar.PHENO1.glm.linear”. Here we show the header and the first five rows of the example output:
+The **Grammar** function generates a PLINK output file called “Grammar.PHENO1.glm.linear”. Here is an example of the header and the first 3 rows for the output file:
 
 CHROM|	POS|	ID|	REF|	ALT|	A1|	TEST|	OBS_CT|	BETA|	SE|	T_STAT|	P|	ERRCODE
 ---- | ----- | ------ | ------| ------| ------| ------| ------| ------| ------| ------| ------| ------
@@ -95,7 +95,7 @@ CHROM|	POS|	ID|	REF|	ALT|	A1|	TEST|	OBS_CT|	BETA|	SE|	T_STAT|	P|	ERRCODE
 …
 
 
-In addition to the above file, a QTN candidate file, named “QTNs”, with Bonferroni as the threshold is the output of **Grl** function. If joint analysis, a file, named “jointQTNs”, will display candidate QTNs resulting from joint analysis, which is the same format as “QTNs”.
+In addition to the above file, an output file named “QTNs” that includes QTN candidates exacted by Bonferroni threshold is generated from **Grl** function. If joint analysis is implemented, an output file named “jointQTNs” that displays candidate QTNs from joint analysis is generated in addition.
 
 ## 5. Example
 ```
@@ -104,7 +104,7 @@ library(BEDMatrix)
 library(data.table)
 
 setwd("./example")
-plinkfilename = "geno"
+plinkfilename <- "geno"
 gdata <- Data(plinkfilename)
 grammar <- Grammar(gdata)
 Grl(grammar)
