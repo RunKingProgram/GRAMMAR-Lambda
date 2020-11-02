@@ -45,11 +45,11 @@ Data (filename, nsmar, msampling)
 ```
 #### Arguments
 #### filename
-An object class of character: the filename before the suffix of plink files. The three plink file must have a same filename, for example, “filename.bed”, “filename.bim” and “filename.bam”.<br>
+An object class of character: the filename of PLINK BED files. The three PLINK files must have the same filename, for example, “filename.bed”, “filename.bim” and “filename.bam”.<br>
 #### nsmar
 An optional numeric for the number of sampling markers. If this is unset, the “nsmar” default is 5,000.<br>
 #### msampling
-logicals. If FLASE, entire markers will be used to calculate GRM. If this is unset or for large scale dataset, the “msampling” default is TURE.
+logicals. If FLASE, entire markers will be used to calculate GRM. If this is unset, the “msampling” default is TURE. This argument is not suitable for large scale dataset.
 
 ### 3.2 Grammar function
 #### Usage
@@ -60,11 +60,11 @@ Grammar (Data, Estimateh2, AssoTst)
 #### Arguments
 
 #### Data
-An object class of list from the 1st step.
+An object class of list generated from the **Data** function.
 #### Estimateh2
-logicals. If TURE, heritability will be estimated and the estimate would be used for estimating breeding value. If this is unset or for large scale dataset, a moderate heritability is set by default at 0.5.
+logicals. If TURE, heritability will be calculated for estimating breeding values. If this is unset or for large scale dataset, heritability is set by default at 0.5.
 #### AssoTst
-You can choose correlation analysis software “GCTA” or “PLINK2.0” as prefer, “PLINK2.0” by default.
+You can choose software “GCTA” or “PLINK2.0” as prefer to implement association tests, and “PLINK2.0” is set by default.
 
 
 ### 3.3 GRL
@@ -75,13 +75,13 @@ Grl(Grammar, Test, QQ,Manh)
 #### Arguments
 
 #### Grammar
-An object class of list from the 2st step.
+An object class of list generated from the **Grammar** function.
 #### Test
-An optional for association test, a test at once or joint analysis. You can choose “Separate” for a test at once and “Joint” for further joint analysis based on the result of “Separate”.
+An optional for association test, a test at once or the joint analysis. You can choose “Separate” for a test at once and “Joint” for further joint analysis based on the result of “Separate”.
 #### QQ
-logicals. If TURE, Q-Q plot would be drawn.
+logicals. If TURE, Q-Q plot would be drawn. True by default.
 #### Manh
-logicals. If TURE, Q-Q plot would be drawn.
+logicals. If TURE, Manhattan plot would be drawn. True by default.
 
 ## 4. Output
 
