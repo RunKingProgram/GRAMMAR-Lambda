@@ -8,7 +8,7 @@ GRL can be downloaded from https://github.com/YuxinSong-prog/GRL. It can be inst
 
 ### 1.2	Installing GRL
 
-**GRL** links to R packages Rcpp, RcppEigen, RcppArmadillo,BEDMatrix and data.table. These dependencies should be installed before installing GRL. In addition, GRL **requires PLINK2.0 Software (http://www.cog-genomics.org/plink/2.0/) with name “plink2.0” under your working directory**. Here is an example for installing GRL and all its dependencies in an R session(assuming none of the R packages other than the default has been installed):
+**GRL** links to R packages Rcpp, RcppEigen, RcppArmadillo,BEDMatrix and data.table. These dependencies should be installed before installing GRL. In addition, GRL **requires PLINK2.0 Software (http://www.cog-genomics.org/plink/2.0/) with name “plink2” under your working directory**. Here is an example for installing GRL and all its dependencies in an R session(assuming none of the R packages other than the default has been installed):
 ```
 install.packages(c("BEDMatrix ", " data.table ", "Rcpp", " RcppEigen ", " RcppArmadillo "), repos = "https://cran.r-project.org/")
 system(“R CMD install GRL_1.0.tgz”)
