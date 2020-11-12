@@ -1,4 +1,4 @@
-# GRL
+# GRAMMAR-Lambda（GRL）
 
 ## 1.Getting started
 
