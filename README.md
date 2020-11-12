@@ -4,7 +4,7 @@
 
 ### 1.1	Downloading GRL
 
-GRL can be downloaded from https://github.com/YuxinSong-prog/GRL. It can be installed as a regular R package.
+GRL can be downloaded from https://github.com/RunKingProgram/GRAMMAR-Lambda. It can be installed as a regular R package.
 
 ### 1.2	Installing GRL
 
