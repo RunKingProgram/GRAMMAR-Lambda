@@ -16,7 +16,7 @@ system(“R CMD install GRL_1.0.tgz”)
 
 ## 2. Input
 
-GRL requires the phenotype and genotype files in an **PLINK BED** format which also called PLINK 1 binary file and the structure of these files is described in http://www.cog-genomics.org/plink/1.9/formats#bed. Preparation of these data are described below.
+Input files consist of three PLINK BED files with the same name. For example, Genotype.bed, Genotype.bim and Genotype.fam.
 
 ### 2.1 Phenotype
 
