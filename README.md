@@ -70,7 +70,7 @@ You can choose software “GCTA” or “PLINK2.0” as prefer to implement asso
 ### 3.3 GRL
 #### Usage
 ```
-Grl(Grammar, Test, QQ,Manh)
+Grl(Grammar, Test, QQ, Manh)
 ```
 #### Arguments
 
