@@ -85,7 +85,7 @@ logicals. If TURE, Manhattan plot would be drawn. True by default.
 
 ## 4. Output
 
-The **Grammar** function generates a PLINK output file called “Grammar.PHENO1.glm.linear”. Here is an example of the header and the first 3 rows for the output file:
+The **Grammar** function generates a PLINK output file called “Grammar.PHENO1.glm.linear”, for example:
 
 CHROM|	POS|	ID|	REF|	ALT|	A1|	TEST|	OBS_CT|	BETA|	SE|	T_STAT|	P|	ERRCODE
 ---- | ----- | ------ | ------| ------| ------| ------| ------| ------| ------| ------| ------| ------
